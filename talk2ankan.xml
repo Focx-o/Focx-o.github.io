@@ -1,0 +1,39 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Introvert Geek Diaries ~ Ankan Biswas on the internet</title>
+ <link href="{{ site.BASE_PATH }}talk2ankan.xml" rel="self"/>
+ <link href="{{ site.BASE_PATH }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.BASE_PATH }}</id>
+ <author>
+   <name>Ankan Biswas</name>
+   <email>support@ankanbiswas.in</email>
+ </author>
+
+ {% for post in site.posts %}
+
+{% if post.custom-link %}
+<entry>
+ 	<title>{{ post.title }}</title>
+	<link href="{{ post.custom-link }}"/>
+	<updated>{{ post.date | date_to_xmlschema }}</updated>
+	<id>{{ site.BASE_PATH }}{{ post.id }}</id>
+	<content type="html">{{ post.content | xml_escape }}</content>
+</entry>
+{% else %}
+<entry>
+ 	<title>{{ post.title }}</title>
+	<link href="{{ post.url }}"/>
+	<updated>{{ post.date | date_to_xmlschema }}</updated>
+	<id>{{ site.BASE_PATH }}{{ post.id }}</id>
+	<content type="html">{{ post.content | xml_escape }}</content>
+</entry>
+{% endif %}
+
+{% endfor %}
+
+</feed>
