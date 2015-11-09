@@ -53,7 +53,33 @@ a.logo {
  display:block;
  width:60px;
  height:60px;
+ -wekit-animation: myrotate 3s 1;
+ -o-animation: myrotate 3s 1;
  animation: myrotate 3s 1;
+}
+@-webkit-keyframes myrotate {
+  from{
+    transform:rotate(0deg);
+    left:680px;
+    top:400px;
+  }
+  to{
+    transform:rotate(360deg);
+    left:-28px;
+    top:-38px;
+  }
+}
+@-o-keyframes myrotate {
+  from{
+    transform:rotate(0deg);
+    left:680px;
+    top:400px;
+  }
+  to{
+    transform:rotate(360deg);
+    left:-28px;
+    top:-38px;
+  }
 }
 @keyframes myrotate {
   from{
@@ -70,7 +96,25 @@ a.logo {
 a.logo svg {
   width:100%;
   height:100%;
+  -webkit-animation:inrotate 1s 4s 1;
+  -o-animation:inrotate 1s 4s 1;
   animation:inrotate 1s 4s 1;
+}
+@-webkit-keyframes inrotate {
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+@-o-keyframes inrotate {
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
 }
 @keyframes inrotate {
   from{
@@ -301,10 +345,36 @@ footer {
   }
   a.logo {
  left:-20px;
- top:-22px;
+ top:-18px;
  width:40px;
  height:40px;
+ -webkit-animation: myrotate 3s 1;
+ -o-animation: myrotate 3s 1;
  animation: myrotate 3s 1;
+}
+@-webkit-keyframes myrotate {
+  from{
+    transform:rotate(0deg);
+    left:680px;
+    top:400px;
+  }
+  to{
+    transform:rotate(360deg);
+    left:-20px;
+    top:-18px;
+  }
+}
+@-o-keyframes myrotate {
+  from{
+    transform:rotate(0deg);
+    left:680px;
+    top:400px;
+  }
+  to{
+    transform:rotate(360deg);
+    left:-20px;
+    top:-18px;
+  }
 }
 @keyframes myrotate {
   from{
@@ -315,9 +385,8 @@ footer {
   to{
     transform:rotate(360deg);
     left:-20px;
-    top:-24px;
+    top:-18px;
   }
-}
 }
 
 @media print {

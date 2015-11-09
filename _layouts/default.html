@@ -68,10 +68,10 @@
         <style>
     #path2987 {
       stroke-dashoffset:0;
-      -webkit-animation: mymove 2s 1;  /* Chrome, Safari, Opera */
+      -webkit-animation: mymove 2s 1,ccolor 5s 4s infinite;  /* Chrome, Safari, Opera */
       -webkit-animation-timing-function: linear;  /* Chrome, Safari, Opera */
-      -moz-animation: mymove 2s 1;  /* firefox */
-      -moz-animation-timing-function: linear;  /* firefox */
+      -o-animation: mymove 2s 1,ccolor 5s 4s infinite;  /* firefox */
+      -o-animation-timing-function: linear;  /* firefox */
       animation: mymove 2s 1,ccolor 5s 4s infinite;
       animation-direction:alternate;
       animation-timing-function: linear;
@@ -84,7 +84,7 @@
         stroke-dashoffset:0;
       }
     }
-        @-moz-keyframes mymove {
+    @-o-keyframes mymove {
       0% {
         stroke-dashoffset:1100;
       }
@@ -98,6 +98,29 @@
       }
       100% {
         stroke-dashoffset:0;
+      }
+    }
+/*  change color    */
+    @-webkit-keyframes ccolor {
+      0% {
+        stroke:#dc3c1a;
+      }
+      50% {
+        stroke:#2980b9;
+      }
+      100%{
+        stroke:#27ae60;
+      }
+    }
+    @-o-keyframes ccolor {
+      0% {
+        stroke:#dc3c1a;
+      }
+      50% {
+        stroke:#2980b9;
+      }
+      100%{
+        stroke:#27ae60;
       }
     }
     @keyframes ccolor {

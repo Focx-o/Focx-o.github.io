@@ -13,7 +13,7 @@ title: Code {web} | Code that Might be Useful to Web Developer
 {% if post.title %}
 
 		{% if post.custom-link %}
-<h2><a href="{{ post.custom-link }}">{{ post.title }}</a></h2>
+<h2><a href="{{ post.custom-link }}"><small>{{ post.date | date: "%d %B, %Y" }}</small>{{ post.title }}</a></h2>
 		{% else %}
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		{% endif %}
