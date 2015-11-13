@@ -15,7 +15,7 @@ title: Code {hacks} | If code is Your Thing
 		{% if post.custom-link %}
 <h2><a href="{{ post.custom-link }}"><small>{{ post.date | date: "%d %B, %Y" }}</small>{{ post.title }}</a></h2>
 		{% else %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<h2><a href="{{ post.url }}"><small>{{ post.date | date: "%d %B, %Y" }}</small>{{ post.title }}</a></h2>
 		{% endif %}
 <p>{{ post.excerpt | truncatewords:25 }}</p>
 <hr/>
