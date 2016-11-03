@@ -11,7 +11,7 @@ rdiscount:
   extensions: [smart]
 
 # This is the default base url path.
-BASE_PATH : http://blog.ankanbiswas.in/
+BASE_PATH : http://meliodus.github.io/
 
 # Website title.
 title : talk2ankan<small>Introvert Geek Diaries</small>
@@ -37,13 +37,13 @@ author:
 # Info
   name: Ankan Biswas
   role: Computer Programmer
-  email: support@ankanbiswas.in
+  email: meliodus@tutanota.com
   image: images/ankan.png
 # Social
-  github: talk2ankan
+  github: meliodus
   twitter: talk2ankan
   facebook: talk2ankan
-  soundcloud: talk2ankan
+  soundcloud: meliodus
   reddit: talk2ankan
 #  About
   about: "Salutation, this is my-space my-world. I dream , i hallucinate, i am curious and ambitious."
