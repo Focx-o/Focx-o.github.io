@@ -11,11 +11,10 @@ rdiscount:
   extensions: [smart]
 
 # This is the default base url path.
-BASE_PATH : http://meliodus.github.io/
+BASE_PATH : http://zestdev.github.io/
 
 # Website title.
-title : talk2ankan<small>Introvert Geek Diaries</small>
-
+title : Zest go
 # label listing. [create labels for category in folder `_label`]
 # social listing. [create labels for social in folder `_label`]
 collections:
@@ -35,20 +34,22 @@ permalink: /:title
 ###########################
 author:
 # Info
-  name: Ankan Biswas
-  role: Computer Programmer
-  email: meliodus@tutanota.com
-  image: images/ankan.png
+  name: Zest
+  role: Null
+  email: jessiwhith@naver.com  
+  
+  image: images/null.jpg
+  video: video/c.mp4
 # Social
-  github: meliodus
-  twitter: talk2ankan
-  facebook: talk2ankan
-  soundcloud: meliodus
-  reddit: talk2ankan
+  github: zestdev
+  twitter: /
+  facebook: / 
+  soundcloud: /
+  reddit: /
 #  About
-  about: "Salutation, this is my-space my-world. I dream , i hallucinate, i am curious and ambitious."
+  about: "Why So Serious? "
 # copyright
-  copyright: "Some rights reserved &#169; 2015 Ankan Biswas."
+  copyright: "Some rights reserved &#169; 2018 Zest."
 
 # Disable custom plugins,and ignore symbolic links..
 # For more see: http://jekyllrb.com/docs/configuration/
