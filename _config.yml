@@ -11,7 +11,7 @@ rdiscount:
   extensions: [smart]
 
 # This is the default base url path.
-BASE_PATH : http://meliodus.github.io/
+BASE_PATH : http://Focx-o.github.io/
 
 # Website title.
 title : talk2ankan<small>Introvert Geek Diaries</small>
